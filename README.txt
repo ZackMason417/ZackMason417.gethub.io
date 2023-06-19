@@ -1,3 +1,7 @@
+I am an Aspiring Data Analytics Professional with a strong foundation in SQL, Python, and Excel, backed by practical experience in portfolio projects. Proven ability to extract insights from data and present findings using business intelligence 
+tools such as Microsoft Power BI and Tableau. Skilled in data manipulation, visualization, and statistical analysis using Pandas, NumPy, Matplotlib, and scikit-learn. Proficient in programming languages including C#, HTML, CSS, and Visual Basic. 
+Demonstrated aptitude for problem-solving and attention to detail. Seeking a challenging role in data analytics to leverage my technical skills and contribute to data-driven decision-making.
+
 Phantom by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
