@@ -6,79 +6,140 @@
 	<meta name="author" content="Zack Mason">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style> 
-	/* text style */
-	html,body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif;}
-	h1 {text-align: center;}
-	/*main page*/
-	.main {
-	margin-left: 20%;
-	}
-	/*social media Icons*/
-	.icon {
-	  padding: 5px;
-	  font-size: 30px;
-	  width: 40px;
-	  text-align: center;
-	  text-decoration: none;
-	  border-radius: 50%;
-	}
-	/* The sidenav */
-	.sidenav {
-	  height: 100%;
-	  width: 200px;
-	  position: fixed;
-	  z-index: 1;
-	  top: 0;
-	  left: 0;
-	  background-color: #094D1C;
-	  overflow-x: hidden;
-	  padding-top: 20px;
-	}
-	/*links designs*/
-	a:link {
-	  color: #EEACE0;
-	  background-color: transparent;
-	  text-decoration: none;
-	}
-	a {
-		font-size: 25px;
-	}
-	a:visited {
-	  color: #B87333;
-	  background-color: transparent;
-	  text-decoration: none;
-	}
+		/* text style */
+		html,body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif;}
+		h1 {text-align: center;}
+		/*main page*/
+		.main {
+		margin-left: 20%;
+		}
+		/*social media Icons*/
+		.icon {
+		  padding: 5px;
+		  font-size: 30px;
+		  width: 40px;
+		  text-align: center;
+		  text-decoration: none;
+		  border-radius: 50%;
+		}
+		/* The sidenav */
+		.sidenav {
+		  height: 100%;
+		  width: 200px;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: #094D1C;
+		  overflow-x: hidden;
+		  padding-top: 20px;
+		}
+		/*links designs*/
+		a:link {
+		  color: #B87333;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+		a {
+			font-size: 25px;
+		}
+		a:visited {
+		  color: #B87333;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+		
+		a:hover {
+		  color: #BAACEE;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+		
+		a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+		ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #094D1C;
+		}
 	
-	a:hover {
-	  color: #BAACEE;
-	  background-color: transparent;
-	  text-decoration: underline;
-	}
+		li {
+			  float: left;
+		}
 	
-	a:active {
-	  color: yellow;
-	  background-color: transparent;
-	  text-decoration: underline;
-	}
+		li a, .dropbtn {
+			  display: inline-block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+		}
+	
+		li a:hover, .dropdown:hover .dropbtn {
+			  background-color: #063b15;
+		}
+	
+		li.dropdown {
+			  display: inline-block;
+		}
+	
+		.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #094D1C;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+		}
+	
+		.dropdown-content a {
+			  color: #B87333;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			  text-align: left;
+		}
+	
+		.dropdown-content a:hover {background-color: #f1f1f1;}
+	
+		.dropdown:hover .dropdown-content {
+			  display: block;
+		}
 	</style>
-	</Head>
-<body>
-	<div id="websidebar" class="sidenav"> 
-		<a href="https://docs.google.com/document/d/1Q16AuA3RDzCBHNGQdu04reM73zz0ge-gkd1lWSqoDfU/edit?usp=sharing" class="logo">
-			<span><img src="images/zmlogo.png" style="width: 200px;" alt="" /></span><span class="title"></span>
-		</a> 
-		<br>
-		<a href="index.html">ABOUT</a>
-		<br>
-		<a href="PYTHON.html">PYTHON</a>
-		<br>
-		<a href="DATA.html">DATA</a>
-		<br>
-		<a href="HTML.html">Websites</a>
-		<br>
-		<a href="ML.html">ML</a>
-		<br>
-	</div>
+		</Head>
+	<body>
+		<div id="websidebar" class="sidenav"> 
+			<a href="https://docs.google.com/document/d/1Q16AuA3RDzCBHNGQdu04reM73zz0ge-gkd1lWSqoDfU/edit?usp=sharing" class="logo">
+				<span><img src="images/zmlogo.png" style="width: 200px;" alt="" /></span><span class="title"></span>
+			</a> 
+			<ul>
+				<li><a href="index.html">About Me</a></li>
+				<li class="dropdown">
+				  <a href="javascript:void(0)" class="dropbtn">Data</a>
+				  <div class="dropdown-content">
+					<a href="DATA.html">Data analysis</a>
+					<a href="ML.html">Machine Learning</a>
+				  </div>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Programming</a>
+					<div class="dropdown-content">
+						<a href="PYTHON.html">Python</a>
+						  <a href="HTML.html">Website</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">IT Projects</a>
+					<div class="dropdown-content">
+						<a href="HOMELAB.html">HOMELAB</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 	<!-- Wrapper -->
 		<div class="main" >
 			<!-- Header -->
@@ -123,6 +184,7 @@
 											<a href="https://github.com/ZackMason417/Portfolio-Projects-.git"><img src="images/github.png" class="icon" alt=""></a>
 											<a href="https://www.linkedin.com/in/zack-mason-8a901828b/"  ><img src="images/linkedin.png" class="icon" alt=""></a>
 											<p>Email: Zackmason417@gmail.com</p>
+											<a href="https://docs.google.com/document/d/1Q16AuA3RDzCBHNGQdu04reM73zz0ge-gkd1lWSqoDfU/edit?pli=1">Resume</a>
 											
 							</section>
 								<p>&copy; ZackMason. All rights reserved</p>
