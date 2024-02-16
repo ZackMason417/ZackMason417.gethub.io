@@ -1,87 +1,144 @@
 <!DOCTYPE HTML> 
 <Head> 
-<Title>Zack Mason - Tech Portfolio</Title>
-<meta name="keywords" content="content="Zack Mason, Tech Portfolio, Programming, Python, Data Analytics, Machine Learning, Web Development, Code Projects, Technology Enthusiast">
-<meta name="description" content="Welcome to my digital space! I am Zack Mason, a dedicated tech enthusiast exploring the realms of programming Dive into my portfolio to discover a collection of projects showcasing my skills">
-<meta name="author" content="Zack Mason">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style> 
-/* text style */
-html,body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif;}
-h1 {text-align: center;}
-/*main page*/
-.main {
-margin-left: 20%;
-}
-/*social media Icons*/
-.icon {
-  padding: 5px;
-  font-size: 30px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-/* The sidenav */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #094D1C;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-/*links designs*/
-a:link {
-  color: #EEACE0;
-  background-color: transparent;
-  text-decoration: none;
-}
-a {
-	font-size: 25px;
-}
-a:visited {
-  color: #B87333;
-  background-color: transparent;
-  text-decoration: none;
-}
+	<Title>Zack Mason - Tech Portfolio</Title>
+	<meta name="keywords" content="content="Zack Mason, Tech Portfolio, Programming, Python, Data Analytics, Machine Learning, Web Development, Code Projects, Technology Enthusiast">
+	<meta name="description" content="Welcome to my digital space! I am Zack Mason, a dedicated tech enthusiast exploring the realms of programming Dive into my portfolio to discover a collection of projects showcasing my skills">
+	<meta name="author" content="Zack Mason">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style> 
+	/* text style */
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif;}
+	h1 {text-align: center;}
+	/*main page*/
+	.main {
+	margin-left: 20%;
+	}
+	/*social media Icons*/
+	.icon {
+	  padding: 5px;
+	  font-size: 30px;
+	  width: 40px;
+	  text-align: center;
+	  text-decoration: none;
+	  border-radius: 50%;
+	}
+	/* The sidenav */
+	.sidenav {
+	  height: 100%;
+	  width: 200px;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #094D1C;
+	  overflow-x: hidden;
+	  padding-top: 20px;
+	}
+	/*links designs*/
+	a:link {
+	  color: #B87333;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+	a {
+		font-size: 25px;
+	}
+	a:visited {
+	  color: #B87333;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+	
+	a:hover {
+	  color: #BAACEE;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	
+	a:active {
+	  color: yellow;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+ 		 overflow: hidden;
+ 		 background-color: #094D1C;
+	}
 
-a:hover {
-  color: #BAACEE;
-  background-color: transparent;
-  text-decoration: underline;
-}
+	li {
+  		float: left;
+	}
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
+	li a, .dropbtn {
+  		display: inline-block;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+	}
+
+	li a:hover, .dropdown:hover .dropbtn {
+  		background-color: #063b15;
+	}
+
+	li.dropdown {
+  		display: inline-block;
+	}
+
+	.dropdown-content {
+  		display: none;
+  		position: absolute;
+  		background-color: #094D1C;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		z-index: 1;
+	}
+
+	.dropdown-content a {
+  		color: #B87333;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+  		text-align: left;
+	}
+
+	.dropdown-content a:hover {background-color: #f1f1f1;}
+
+	.dropdown:hover .dropdown-content {
+  		display: block;
+	}
 </style>
-</Head>
+	</Head>
 <body>
-	<!--sidebar--->
 	<div id="websidebar" class="sidenav"> 
-		<!--Logo-->
 		<a href="https://docs.google.com/document/d/1Q16AuA3RDzCBHNGQdu04reM73zz0ge-gkd1lWSqoDfU/edit?usp=sharing" class="logo">
 			<span><img src="images/zmlogo.png" style="width: 200px;" alt="" /></span><span class="title"></span>
 		</a> 
-		<!--links-->
-		<br>
-		<a href="index.html">ABOUT</a>
-		<br>
-		<a href="PYTHON.html">PYTHON</a>
-		<br>
-		<a href="DATA.html">DATA</a>
-		<br>
-		<a href="HTML.html">Websites</a>
-		<br>
-		<a href="ML.html">ML</a>
-		<br>
-
+		<ul>
+			<li><a href="index.html">About Me</a></li>
+			<li class="dropdown">
+			  <a href="javascript:void(0)" class="dropbtn">Data</a>
+			  <div class="dropdown-content">
+				<a href="DATA.html">Data analysis</a>
+				<a href="ML.html">Machine Learning</a>
+			  </div>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Programming</a>
+				<div class="dropdown-content">
+					<a href="PYTHON.html">Python</a>
+			  		<a href="HTML.html">Website</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">IT Projects</a>
+				<div class="dropdown-content">
+					<a href="HOMELAB.html">HOMELAB</a>
+				</div>
+			</li>
+		</ul>
 	</div>
 	<!-- Wrapper -->
 		<div class="main" >
@@ -103,18 +160,15 @@ a:active {
 						<p>As I navigate this journey, I'm open to various opportunities that align with my interests. I'm not in a rush to define my role but rather to explore where I can contribute meaningfully and find fulfillment in the work I do.</p>
 						
 						<h2>Skills and Expertise</h2>
-						<ul>
-							<li>Programming Languages: Python, SQL, HTML, CSS, C#</li>
-							<li>Data Science: Microsoft Power BI, Tableau, Microsoft Suite</li>
-							<li>Technologies: Visual Studio Code, Jupyter Notebook, MySQL</li>
-						</ul>
+							<p>Programming Languages: Python, SQL, HTML, CSS, C#</p>
+							<p>Data Science: Microsoft Power BI, Tableau, Microsoft Suite</p>
+							<p>Technologies: Visual Studio Code, Jupyter Notebook, MySQL</p>
 						
 						<h2>Experiences with Technology</h2>
-						<ul>
-							<li>Participated in the Kiwi Bots in 2015-2016, working with Vex IQ robots.</li>
-							<li>Participated in Bricks 4 Kidz around 2014, Working with the Lego Mindstorm robots.</li>
-							<li>Served as the IT person in my primary school, addressing basic computer issues and presenting to the school board on the benefits of introducing computers to the classroom.</li>
-						</ul>
+							<p>Participated in the Kiwi Bots in 2015-2016, working with Vex IQ robots.</p>
+							<p>Participated in Bricks 4 Kidz around 2014, Working with the Lego Mindstorm robots.</p>
+							<p>Served as the IT person in my primary school, addressing basic computer issues and presenting to the school board on the benefits of introducing computers to the classroom.</p>
+
 						
 						<h2>Diverse Interests</h2>
 						<p>My fascination with technology isn't confined to a specific job title. I'm interested in a range of areas, from coding to IT infrastructure and robotics. This diversity reflects my desire to understand the various dimensions of technology and find where I can make meaningful contributions.</p>
@@ -144,6 +198,7 @@ a:active {
 											<a href="https://github.com/ZackMason417/Portfolio-Projects-.git"><img src="images/github.png" class="icon" alt=""></a>
 											<a href="https://www.linkedin.com/in/zack-mason-8a901828b/"  ><img src="images/linkedin.png" class="icon" alt=""></a>
 											<p>Email: Zackmason417@gmail.com</p>
+											<a href="https://docs.google.com/document/d/1Q16AuA3RDzCBHNGQdu04reM73zz0ge-gkd1lWSqoDfU/edit?pli=1">Resume</a>
 											
 							</section>
 								<p>&copy; ZackMason. All rights reserved</p>
